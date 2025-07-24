@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Phân tích kích thước hình ảnh</title>
+  <style>
+    #result {
+      border: 2px solid red;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    img {
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2>Phân tích hình ảnh</h2>
+
+  <p>Image 1: no height, width, or style</p>
+  <img id="img1" src="https://www.mozilla.org/images/mozilla-banner.gif">
+
+  <p>Image 2: height="50", width="500", but no style</p>
+  <img id="img2" src="https://www.mozilla.org/images/mozilla-banner.gif" height="50" width="500">
+
+  <p>Image 3: no height, width, but style="height: 50px; width: 500px;"</p>
+  <img id="img3" src="https://www.mozilla.org/images/mozilla-banner.gif" style="height: 50px; width: 500px;">
+
+  <div id="result">
+    <h3>Kết quả phân tích:</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
